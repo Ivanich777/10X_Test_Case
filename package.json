@@ -1,0 +1,16 @@
+{
+  "name": "10x-test-case",
+  "version": "1.0.0",
+  "description": "Course catalog test task",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.77.0",
+    "vite": "^5.2.0"
+  }
+}
+

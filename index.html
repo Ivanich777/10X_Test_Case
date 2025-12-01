@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our online courses</title>
+  <link rel="stylesheet" href="styles/main.scss">
+</head>
+<body>
+  <section class="course-catalog">
+    <header class="course-catalog__header">
+      <h2 class="course-catalog__subtitle">ENJOY YOUR STUDYING!</h2>
+      <h1 class="course-catalog__title">Our online courses</h1>
+    </header>
+
+    <div class="course-catalog__controls">
+      <nav class="filter-bar">
+        <ul class="filter-bar__list">
+          <li class="filter-bar__item">
+            <button class="filter-bar__button filter-bar__button--active" data-category="all">
+              All <sup class="filter-bar__count">17</sup>
+            </button>
+          </li>
+          <li class="filter-bar__item">
+            <button class="filter-bar__button" data-category="marketing">
+              Marketing <sup class="filter-bar__count">4</sup>
+            </button>
+          </li>
+          <li class="filter-bar__item">
+            <button class="filter-bar__button" data-category="management">
+              Management <sup class="filter-bar__count">3</sup>
+            </button>
+          </li>
+          <li class="filter-bar__item">
+            <button class="filter-bar__button" data-category="hr-recruiting">
+              HR & Recruiting <sup class="filter-bar__count">5</sup>
+            </button>
+          </li>
+          <li class="filter-bar__item">
+            <button class="filter-bar__button" data-category="design">
+              Design <sup class="filter-bar__count">2</sup>
+            </button>
+          </li>
+          <li class="filter-bar__item">
+            <button class="filter-bar__button" data-category="development">
+              Development <sup class="filter-bar__count">3</sup>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="search">
+        <input 
+          type="text" 
+          class="search__input" 
+          placeholder="Search course..."
+          id="search-input"
+        >
+        <span class="search__icon">🔍</span>
+      </div>
+    </div>
+
+    <div class="course-catalog__grid" id="courses-grid">
+    </div>
+
+    <button class="course-catalog__load-more" id="load-more">
+      <span class="course-catalog__load-icon">↻</span>
+      Load more
+    </button>
+  </section>
+
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
+
